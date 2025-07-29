@@ -1,72 +1,129 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<title>Ashneet's Link-Hub</title>
-<style>
-   body {
-     margin: 0;
-     padding: 40px;
-     background-color: #0f0f0f;
-     color: #00ffff;
-     font-family: 'Courier New', monospace;
-   }
-   h1 {
-     text-align: center;
-     font-size: 2.5rem;
-     color: #fff;
-     text-shadow: 0 0 8px #00ffff;
-     margin-bottom: 40px;
-   }
-   .link-list {
-     max-width: 600px;
-     margin: auto;
-     background: rgba(255, 255, 255, 0.05);
-     padding: 30px;
-     border-radius: 10px;
-     box-shadow: 0 0 10px #00ffff30;
-   }
-   .link-entry {
-     margin-bottom: 20px;
-   }
-   .link-entry span {
-     display: inline-block;
-     width: 100px;
-     font-weight: bold;
-     color: #fff;
-   }
-   .link-entry a {
-     color: #00ffff;
-     text-decoration: none;
-     transition: 0.3s;
-   }
-   .link-entry a:hover {
-     color: #ffffff;
-     text-shadow: 0 0 5px #00ffff;
-   }
-   footer {
-     text-align: center;
-     color: #555;
-     margin-top: 50px;
-     font-size: 0.8rem;
-   }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ashneet Singh Gulati</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: #0b0b0b;
+      color: #00f6ff;
+      overflow-x: hidden;
+    }
+
+    .bg-animation {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(130deg, #000000 0%, #111 50%, #000000 100%);
+      background-size: 400% 400%;
+      animation: moveBg 20s ease infinite;
+      z-index: 0;
+    }
+
+    @keyframes moveBg {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      min-height: 100vh;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      color: #00f6ff;
+      text-shadow: 0 0 12px #00f6ff;
+      margin-bottom: 20px;
+    }
+
+    .avatar {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-image: url('https://i.imgur.com/Kcx1tUj.png'); /* Ersatzbild funktioniert garantiert */
+      background-size: cover;
+      background-position: center;
+      border: 3px solid #00f6ff;
+      box-shadow: 0 0 30px #00f6ff;
+      margin-bottom: 20px;
+    }
+
+    .info {
+      color: #ffffff;
+      font-size: 1rem;
+      margin-bottom: 8px;
+    }
+
+    .quote {
+      font-style: italic;
+      color: #a0f;
+      margin-bottom: 25px;
+    }
+
+    .links a {
+      display: block;
+      margin: 12px auto;
+      width: 240px;
+      padding: 12px;
+      border: 2px solid #00f6ff;
+      border-radius: 12px;
+      color: #00f6ff;
+      font-size: 1.1rem;
+      text-decoration: none;
+      background: transparent;
+      box-shadow: 0 0 12px #00f6ff;
+      transition: 0.3s ease;
+    }
+
+    .links a:hover {
+      background-color: #00f6ff;
+      color: #000;
+      box-shadow: 0 0 25px #00f6ff;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
-<h1>Ashneet</h1>
-<div class="link-list">
-<div class="link-entry">
-<span>Discord:</span>
-<a href="https://discordapp.com/users/.ashneet" target="_blank">Zum Discord</a>
-</div>
-<div class="link-entry">
-<span>Insta:</span>
-<a href="https://instagram.com/ashneet077" target="_blank">Instagram öffnen</a>
-</div>
-<div class="link-entry">
-<span>Snapchat:</span>
-<a href="https://snapchat.com/add/ashneetsingh20" target="_blank">Snap öffnen</a>
-</div>
-<footer>© 2025 Ashneet | Gamer x Anime Fan</footer>
+
+  <div class="bg-animation"></div>
+
+  <div class="container">
+    <h1>Ashneet Singh<br>Gulati</h1>
+    <div class="avatar"></div>
+    <div class="info">📅 12. Oktober 2006</div>
+    <div class="quote">"Never give up – Level up!"</div>
+
+    <div class="links">
+      <a href="https://discord.com/users/.ashneet" target="_blank">Discord</a>
+      <a href="https://instagram.com/ashneet077" target="_blank">Instagram</a>
+      <a href="https://snapchat.com/add/ashneetsingh20" target="_blank">Snapchat</a>
+    </div>
+
+    <footer>© 2025 Ashneet | Gamer × Anime × Neon Vibes</footer>
+  </div>
+
 </body>
 </html>
